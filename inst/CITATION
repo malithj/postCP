@@ -1,0 +1,16 @@
+citHeader("To cite postCP in publications use:")
+
+citEntry(entry = "Article",
+  title        = "Fast estimation of posterior probabilities in change-point models                         through a constrained hidden Markov model",
+  author       = personList(as.person("The-Minh Luong"),
+                   as.person("Yves Rozenholc"),
+                   as.person("Gregory Nuel")),
+  journal      = "Computational Statistics & Data Analysis",
+  year         = "2012",
+  url          = "http://arxiv.org/pdf/1203.4394",
+
+  textVersion  =
+  paste("Luong, T.M., Rozenholc, Y. & Nuel, G. (2012).",
+        "Fast estimation of posterior probabilities in change-point models through a              constrained hidden Markov model.",
+        "URL http://arxiv.org/pdf/1203.4394.")
+)
