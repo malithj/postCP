@@ -9,9 +9,8 @@ Authors@R: c(
     person("The Minh", "Luong", email = "theminh.luong@clinepi.mcgill.ca", role = "aut"),
     person("Malith", "Jayaweera", email = "malithgsoc2016@gmail.com", role = c("aut","cre")))
 Description: The functions are used for change-point problems, after an initial set of change-points within the data has already been obtained. The function postCP obtains estimates of posterior probabilities of change-point and hidden states for each observation, and confidence intervals for the positions of the change-point. The function postCPsample obtains random samples of sets of change-points using the output of the postCP function. Model selection may be performed using function postCPmodelsel through criteria obtained from function postCPcrit.
-License: GPL (>= 2)
+License: GPL (>= 3)
 LazyLoad: yes
-Depends: MASS
 Imports: Rcpp
 LinkingTo: Rcpp
 SystemRequirements: GNU make

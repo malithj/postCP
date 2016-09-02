@@ -1,22 +1,23 @@
-\name{plot.postCP}
-\alias{plot.postCP}
+\name{plot.postcp}
+\alias{plot.postcp}
 \title{
   Plot method for postCP.
 }
 \description{
-  Plots results of postCP, plots observed data (if included in postCP output) and posterior probabilities.
+  Plots results of postcp, plots observed data (if included in postcp output) and posterior probabilities.
 }
 \usage{
-\method{plot}{postCP}(x, line.prob="cp",line.mean="seg",rm.outliers=0,
-main=character(),xlab=NA,ylab=NA,p.col="blue",pch=16,p.cex=NA,
-m.col="brown",m.lty=1,m.lwd=1,l.col=NA,l.lty=NA,l.lwd=NA, ...)
+\method{plot}{postcp}(x, y=NULL, xlab = "index", ylab = "probability",
+main = "Posterior Change Point Probability Distribution",
+p.col = "blue", pch = 16, p.cex = NA, m.col = "brown",
+m.lty = 2, m.lwd = 1, l.col = NA, l.lty = NA, l.lwd = NA, ...)
 }
 \arguments{
-\item{x}{Results of postCP, use as input for plot.postCP.}
-\item{main}{Main title of plot (see par).}
-\item{show.response}{If show.response=TRUE, the response variable is displayed from the data instead of the Posterior change point probability distribution}
+\item{x}{Results of postCP, use as input for plot.postcp.}
+\item{y}{y coordinates for the default plot function. Defaults to NULL}
 \item{xlab}{Label for x-axis (see par).}
 \item{ylab}{Label for y-axis (see par).}
+\item{main}{Main title of plot (see par).}
 \item{p.col}{Colour of scatterplot of data (see par).}
 \item{pch}{Type of character of scatterplot (see par).}
 \item{p.cex}{cex parameter of scatterplot (see par).}
@@ -37,8 +38,8 @@ m.col="brown",m.lty=1,m.lwd=1,l.col=NA,l.lty=NA,l.lwd=NA, ...)
 \tabular{ll}{
 Package: \tab postCP\cr
 Type: \tab Package\cr
-Version: \tab 1.7.2\cr
-Date: \tab 2013-11-25\cr
+Version: \tab 1.7.3\cr
+Date: \tab 2016-09-01\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -57,8 +58,7 @@ Maintainer: Who to complain to \email{malithgsoc2016@gmail.com}
 
 \keyword{ package }
 \seealso{
-\code{\link{postCP}}
-\code{\link{par}}
+\code{\link{postcp}}
 }
 
 \examples{
