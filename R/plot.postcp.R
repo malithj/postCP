@@ -1,7 +1,7 @@
 plot.postcp <-
 function(x, y=NULL, xlab = "index",
          ylab = "probability", main = "Posterior Change Point Probability Distribution", p.col = "blue", pch = 16, p.cex = NA, m.col = "brown", m.lty = 2,
-         m.lwd = 1, l.col = NA, l.lty = NA, l.lwd = NA)
+         m.lwd = 1, l.col = NA, l.lty = NA, l.lwd = NA, ...)
 {
   # x: results from function postCP
   if (missing(x)) {
