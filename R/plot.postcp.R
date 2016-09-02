@@ -1,5 +1,3 @@
-plot <- function(x, ...) UseMethod("plot")
-
 plot.postcp <-
 function(x, main = "Posterior Change Point Probability Distribution", show.response = FALSE, xlab = "index",
          ylab = "probability", p.col = "blue", pch = 16, p.cex = NA, m.col = "brown", m.lty = 2,

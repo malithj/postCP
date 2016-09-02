@@ -1,11 +1,10 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
-// This is the core implementation of the forward-backward model
-//
-//
-//
-//
+//' Implementation of logsumexp as a part of core part
+//'
+//' @param loga log-value.
+//' @param logb log-value.
 inline double logsumexp(double loga,double logb) {
   if (loga>logb)
     return loga+log1p(exp(logb-loga));
@@ -13,6 +12,10 @@ inline double logsumexp(double loga,double logb) {
     return logb+log1p(exp(loga-logb));
 }
 
+//' core implementation of the forward-backward algorithm for HMM
+//'
+//' @param ledata log-evidence matrix.
+//' @param workdata an empty matrix.
 // [[Rcpp::export]]
 SEXP FwBk(Rcpp::NumericMatrix ledata, Rcpp::NumericMatrix workdata){
   Rcpp::NumericMatrix le(ledata);
@@ -43,6 +46,10 @@ inline double max(double loga,double logb) {
     return logb;
 }
 
+//' core implementation of the max forward-backward algorithm for most probable cp configurations
+//'
+//' @param ledata log-evidence matrix.
+//' @param workdata an empty matrix.
 // [[Rcpp::export]]
 SEXP maxFwBk(Rcpp::NumericMatrix ledata, Rcpp::NumericMatrix workdata){
   Rcpp::NumericMatrix le(ledata);
