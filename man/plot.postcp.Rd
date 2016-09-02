@@ -58,8 +58,7 @@ Maintainer: Who to complain to \email{malithgsoc2016@gmail.com}
 
 \keyword{ package }
 \seealso{
-\code{\link{postCP}}
-\code{\link{par}}
+\code{\link{postcp}}
 }
 
 \examples{
