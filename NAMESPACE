@@ -1,3 +1,8 @@
 useDynLib(postCP)
 importFrom(Rcpp,evalCpp)
+importFrom("graphics", "abline", "plot", "points", "title")
+importFrom("stats", "coefficients", "dbinom", "dgamma", "dnorm",
+             "dpois", "gaussian", "glm", "model.frame", "model.matrix",
+             "model.response", "predict")
+S3method(plot, postcp)
 exportPattern("^[[:alpha:]]+")

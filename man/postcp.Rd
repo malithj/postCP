@@ -1,7 +1,5 @@
-\name{postCP}
-\alias{postCP}
-\alias{print.postCP}
-\alias{postCP.default}
+\name{postcp}
+\alias{postcp}
 \title{
   Characterize uncertainty in change-point estimates.
 }
@@ -9,7 +7,7 @@
   The functions are used for change-point problems, after an initial set of change-points within the data has already been obtained. The function postCP obtains estimates of posterior probabilities of change-points and hidden states for each observation.
 }
 \usage{
-postcp(formula, data, bp=integer(), family = gaussian, sigma=1.0, maxFB = FALSE)
+postcp(formula, data, bp=integer(), family = gaussian(), sigma=1.0, maxFB = FALSE)
 
 }
 \arguments{
@@ -38,8 +36,8 @@ postcp(formula, data, bp=integer(), family = gaussian, sigma=1.0, maxFB = FALSE)
 \tabular{ll}{
 Package: \tab postCP\cr
 Type: \tab Package\cr
-Version: \tab 1.7.2\cr
-Date: \tab 2013-11-25\cr
+Version: \tab 1.7.3\cr
+Date: \tab 2016-09-01\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
