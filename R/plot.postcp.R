@@ -10,12 +10,13 @@ function(x, y=NULL, xlab = "index",
   n <- x$n
 
   #Create plot
-  plot(c(1,n), c(min(x$response.variable), max(x$response.variable)), t = "n", xlab = xlab,
-         ylab = "y", col = p.col, pch = pch, cex = p.cex)
+  plot(c(1,n), c(0,max(x$post.cp)), t = "n", xlab = xlab, ylab = ylab, col = p.col, pch = pch,
+       cex = p.cex)
   #Change points
-  abline(v = x$cp, col = m.col, lty = m.lty, lwd = m.lwd);
+  abline( v = x$cp, col =m.col, lty = m.lty, lwd = m.lwd);
   #Add points to the graph
-  points(x$response.variable, t = 'l', col = p.col, lty = 1)
-  title(main = "Original Data")
+  for (k in 1:ncol(x$post.cp))
+    points(x$post.cp[,k], t = 'l', col = k, lty = k)
+  title( main = main)
 
 }

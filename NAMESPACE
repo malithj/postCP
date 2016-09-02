@@ -5,4 +5,4 @@ importFrom("stats", "coefficients", "dbinom", "dgamma", "dnorm",
              "dpois", "gaussian", "glm", "model.frame", "model.matrix",
              "model.response", "predict")
 S3method(plot, postcp)
-exportPattern("^[[:alpha:]]+")
+export("postcp","plot.postcp")
