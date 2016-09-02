@@ -7,17 +7,18 @@
   Plots results of postcp, plots observed data (if included in postcp output) and posterior probabilities.
 }
 \usage{
-\method{plot}{postcp}(x, main = "Posterior Change Point Probability Distribution",
-show.response = FALSE, xlab = "index", ylab = "probability", p.col = "blue",
-pch = 16,   p.cex = NA, m.col = "brown", m.lty = 2,m.lwd = 1, l.col = NA,
-l.lty = NA, l.lwd = NA)
+\method{plot}{postcp}(x, y=NULL, xlab = "index", ylab = "probability",
+main = "Posterior Change Point Probability Distribution",
+show.response = FALSE, p.col = "blue", pch = 16, p.cex = NA, m.col = "brown",
+m.lty = 2, m.lwd = 1, l.col = NA, l.lty = NA, l.lwd = NA)
 }
 \arguments{
 \item{x}{Results of postCP, use as input for plot.postcp.}
-\item{main}{Main title of plot (see par).}
-\item{show.response}{If show.response=TRUE, the response variable is displayed from the data instead of the Posterior change point probability distribution}
+\item{y}{y coordinates for the default plot function. Defaults to NULL}
 \item{xlab}{Label for x-axis (see par).}
 \item{ylab}{Label for y-axis (see par).}
+\item{main}{Main title of plot (see par).}
+\item{show.response}{If show.response=TRUE, the response variable is displayed from the data instead of the Posterior change point probability distribution}
 \item{p.col}{Colour of scatterplot of data (see par).}
 \item{pch}{Type of character of scatterplot (see par).}
 \item{p.cex}{cex parameter of scatterplot (see par).}
