@@ -18,8 +18,6 @@ res = postcp(Employed ~ GNP + Armed.Forces,family=gaussian(),data=data,bp=c(7,10
 #Plot the results
 plot.postcp(res,main="Posterior Change Point Probability Distribution")
 
-#plot.postCP also provides support to display the response variable easily
-plot.postcp(res,show.response = TRUE)
 
 ## ---- fig.width=5, fig.align='center'------------------------------------
 require(postCP)
