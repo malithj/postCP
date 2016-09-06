@@ -2,8 +2,8 @@ Package: postCP
 Type: Package
 Title: A package to estimate posterior probabilities and perform model
         selection in change-point models using constrained HMM
-Version: 1.7.3
-Date: 2016-09-01
+Version: 1.8.0
+Date: 2016-09-07
 Authors@R: c(
     person("Gregory", "Nuel", email = "nuel@math.cnrs.fr", role = "aut"),
     person("The Minh", "Luong", email = "theminh.luong@clinepi.mcgill.ca", role = "aut"),

@@ -38,8 +38,8 @@ m.lty = 2, m.lwd = 1, l.col = NA, l.lty = NA, l.lwd = NA, ...)
 \tabular{ll}{
 Package: \tab postCP\cr
 Type: \tab Package\cr
-Version: \tab 1.7.3\cr
-Date: \tab 2016-09-01\cr
+Version: \tab 1.8.0\cr
+Date: \tab 2016-09-07\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }

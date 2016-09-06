@@ -36,8 +36,8 @@ postcp(formula, data, bp=integer(), family = gaussian(), sigma=1.0, maxFB = FALS
 \tabular{ll}{
 Package: \tab postCP\cr
 Type: \tab Package\cr
-Version: \tab 1.7.3\cr
-Date: \tab 2016-09-01\cr
+Version: \tab 1.8.0\cr
+Date: \tab 2016-09-07\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
